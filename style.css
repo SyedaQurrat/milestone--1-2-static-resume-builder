@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #f0f0f0; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    background: #ffffff;
+    margin: 50px;
+    box-shadow: 0 50px 75px rgba(0, 0, 0, 0.1);
+    border-left: 50px solid #ffffff;
+    border-right: 50px solid #ffffff;
+}
+
+.container .top {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 40px;
+    padding-bottom: 0;
+}
+
+.container .top .imgBx {
+    display: flex;
+    align-items: center;
+}
+
+.container .top .imgBx .box {
+    width: 70%;
+    min-width: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    aspect-ratio: 1;
+}
+
+.container .top .imgBx .box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container .top .profileText {
+    padding-left: 20px;
+}
+
+.container .top .profileText h3 {
+    font-size: 30px;
+    font-weight: 600;
+    margin-top: 50px;
+    color: #333333; 
+}
+
+.container .top .profileText h3 span {
+    font-size: 18px;
+    color: #666666; 
+}
+
+.container .contentBox {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 20px;
+}
+
+.leftSide,
+.rightSide {
+    padding: 30px;
+}
+
+.leftSide h3,
+.rightSide h3 {
+    margin-bottom: 15px;
+    color: #444444; 
+}
+
+.leftSide ul {
+    list-style: none;
+    margin-bottom: 30px;
+}
+
+.leftSide ul li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.leftSide ul li ion-icon {
+    font-size: 24px;
+    margin-right: 15px;
+    color: #555555; 
+}
+
+.leftSide ul li .text {
+    font-size: 14px;
+    color: #333333; 
+}
+
+.leftSide ul .percent {
+    background: #e0e0e0;
+    height: 5px;
+    width: 100%;
+    margin-left: 10px;
+    position: relative;
+}
+
+.leftSide ul .percent div {
+    background: #007bff;
+    height: 100%;
+}
+
+.interest li img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.rightSide .about .box {
+    margin-bottom: 20px;
+}
+
+.skills .box {
+    margin-bottom: 20px;
+}
+
+.skills .box span {
+    display: block;
+}
+
+.skills .box .percent {
+    background: #e0e0e0; 
+    height: 5px;
+    width: 100%;
+}
+
+.skills .box .percent div {
+    background: #007bff;
+    height: 100%;
+}
+
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 768px) {
+    .container .top {
+        display: block;
+        padding: 20px;
+    }
+
+    .container .top .imgBx {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    .container .top .profileText {
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .container .contentBox {
+        display: block;
+    }
+
+    .leftSide, .rightSide {
+        padding: 20px;
+    }
+
+    .skills .box span {
+        font-size: 12px;
+    }
+
+    .leftSide ul li {
+        font-size: 12px;
+    }
+
+    .leftSide ul .percent {
+        height: 4px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        margin: 20px;
+    }
+
+    .container .top .profileText h3 {
+        font-size: 24px;
+    }
+
+    .container .top .profileText h3 span {
+        font-size: 16px;
+    }
+
+    .skills .box .percent {
+        height: 3px;
+    }
+
+    .leftSide, .rightSide {
+        padding: 10px;
+    }
+}
